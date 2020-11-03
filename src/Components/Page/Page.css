@@ -1,0 +1,23 @@
+.Page {
+    text-align: center;
+}
+
+.Page-input {
+    margin-right: 1%;
+    width: 30%;
+    font-size: 158%;
+    border-color: black;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: gray;
+    border-radius: 7px;
+}
+
+.Page-button {
+    margin-left: 2%;
+    background-color: black;
+    border-color: black;
+    font-size: 150%;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: gray;
+    border-radius: 7px;
+}

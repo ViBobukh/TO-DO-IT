@@ -1,0 +1,9 @@
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.App-caption {
+    font-size: 325%;
+    text-align: center;
+    color: black;
+}
