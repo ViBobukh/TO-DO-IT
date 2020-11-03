@@ -3,7 +3,12 @@ import shortid from "shortid";
 import actionTypes from "../Action/actionTypes";
 
 export const state = {
-    items: []
+    items: loadItemsFromLS()
+}
+
+function loadItemsFromLS() {
+    console.log(JSON.parse(localStorage.getItem("items")))
+    return JSON.parse(localStorage.getItem("items")) || [];
 }
 
 function createObj(text) {

@@ -5,11 +5,12 @@ import {connect} from "react-redux";
 import {createAddAction} from "../../Action/actions";
 import "./Page.css";
 
-function Page ({createAddAction}) {
+function Page ({createAddAction, createStartAction}) {
     const [value, changeValue] = useState(" ");
     const handler = (event) => {
         changeValue(event.target.value)
     }
+
     return (
         <div className="Page">
             <input className="Page-input" value={value} onChange={handler} />

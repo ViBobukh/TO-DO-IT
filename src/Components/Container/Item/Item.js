@@ -8,7 +8,7 @@ function Item ({text, itemId, done, createDeleteAction, createDoneAction, dateDo
     return (
         <div className={classNames("Item", {"Item-backgroundDone": done})}>
             <div className="Item-checkbox">
-                <input type="checkbox" checked={done} onClick={()=> createDoneAction(itemId, !done)}/>
+                <input type="checkbox" defaultChecked={done} onClick={()=> createDoneAction(itemId, !done)}/>
                 {done ? <div className="Item-infoAboutDone">{dateDone}
                 </div> : null }
             </div>
